@@ -9,5 +9,6 @@ Here's how it looks like: ![screenshot](doc/screenshot.png "Screenshot")
 ## Running
 
 If you want to run from command line type in
-```dotnet run --project 2048
+```shell
+dotnet run --project 2048
 ```
