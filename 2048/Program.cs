@@ -1,10 +1,11 @@
-namespace Kfl.Game2048
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _2048
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
     class Program
     {
@@ -23,7 +24,7 @@ namespace Kfl.Game2048
         private readonly int nRows;
         private readonly int nCols;
         private readonly Random random = new Random();
-        
+
         public Game()
         {
             this.Board = new ulong[4, 4];
@@ -138,12 +139,12 @@ namespace Kfl.Game2048
             int innerStart = isIncreasing ? 0 : innerCount - 1;
             int innerEnd = isIncreasing ? innerCount - 1 : 0;
 
-            Func<int, int> drop = isIncreasing 
-                ? new Func<int, int>(innerIndex => innerIndex - 1) 
+            Func<int, int> drop = isIncreasing
+                ? new Func<int, int>(innerIndex => innerIndex - 1)
                 : new Func<int, int>(innerIndex => innerIndex + 1);
 
-            Func<int, int> reverseDrop = isIncreasing 
-                ? new Func<int, int>(innerIndex => innerIndex + 1) 
+            Func<int, int> reverseDrop = isIncreasing
+                ? new Func<int, int>(innerIndex => innerIndex + 1)
                 : new Func<int, int>(innerIndex => innerIndex - 1);
 
             Func<ulong[,], int, int, ulong> getValue = isAlongRow
