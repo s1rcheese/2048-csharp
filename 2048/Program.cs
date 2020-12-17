@@ -104,7 +104,7 @@ namespace _2048
                 case 32:
                     return ConsoleColor.Yellow;
                 case 64:
-                    return ConsoleColor.Yellow;
+                    return ConsoleColor.Blue;
                 case 128:
                     return ConsoleColor.DarkCyan;
                 case 256:
