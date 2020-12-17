@@ -112,9 +112,9 @@ namespace _2048
                 case 512:
                     return ConsoleColor.DarkMagenta;
                 case 1024:
-                    return ConsoleColor.Magenta;
+                    return ConsoleColor.DarkYellow;
                 default:
-                    return ConsoleColor.Red;
+                    return ConsoleColor.White;
             }
         }
 
