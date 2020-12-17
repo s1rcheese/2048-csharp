@@ -83,7 +83,7 @@ namespace _2048
             }
             while (true); // use CTRL-C to break out of loop
 
-            Console.WriteLine("Press any key to quit...");
+            Console.WriteLine("Press enter to quit...");
             Console.Read();
         }
 
