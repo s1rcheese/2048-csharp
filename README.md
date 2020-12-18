@@ -29,4 +29,5 @@ dotnet run --project 2048
 ```
 
 # Stuff to do
-Add a black background to the numbers so that other command lines (that is not the one Windows comes with)(ex. Ubuntu Terminal) can see the numbers better.
+~~Add a black background to the numbers so that other command lines (that is not the one Windows comes with)(ex. Ubuntu Terminal) can see the numbers better.
+~~
