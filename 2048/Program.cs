@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace _2048
 {
 
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -16,7 +16,7 @@ namespace _2048
         }
     }
 
-    class Game
+    public class Game
     {
         public ulong Score { get; private set; }
         public ulong[,] Board { get; private set; }
